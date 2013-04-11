@@ -4,11 +4,11 @@ require 'aws-sdk'
 
 module Dynamo
 
-	@@db = AWS::DynamoDB.new(
-	  :dynamo_db_endpoint => 'dynamodb.ap-northeast-1.amazonaws.com',
-	  :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
-	  :secret_access_key => ENV['AWS_SECRET_KEY']
-	)
+  @@db = AWS::DynamoDB.new(
+    :dynamo_db_endpoint => 'dynamodb.ap-northeast-1.amazonaws.com',
+    :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
+    :secret_access_key => ENV['AWS_SECRET_KEY']
+  )
 
   def self.db
     @@db

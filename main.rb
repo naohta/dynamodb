@@ -3,5 +3,5 @@ require_relative 'dynamo'
 
 puts 'Hi!'
 Dynamo.db.tables.each do |t|
-	puts t.name
+  puts t.name
 end
